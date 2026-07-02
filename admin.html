@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administrace | Maskoti · Atrakce365</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="login-wrap" id="loginView">
+  <div class="login-card">
+    <div class="login-badge">🎭</div>
+    <h1>Přihlášení administrátora</h1>
+    <p class="sub">Maskoti · Atrakce365</p>
+    <input class="field" id="loginEmail" type="email" placeholder="E-mail" style="margin-bottom:10px">
+    <input class="field" id="loginPassword" type="password" placeholder="Heslo">
+    <button class="btn-primary" id="loginBtn">Přihlásit se</button>
+    <p class="login-error hidden" id="loginError">Nesprávný e-mail nebo heslo.</p>
+    <p style="font-size:.75rem;color:var(--muted);margin-top:16px">
+      Přihlašovací účet se vytváří ve Firebase Console → Authentication → Users
+      (viz README.md). Do webu se sem dostanete přes 5× klik na logo v hlavičce.
+    </p>
+  </div>
+</div>
+
+<div class="shell hidden" id="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <span class="badge">🎭</span>
+      <span class="display" style="font-size:1.05rem">Admin</span>
+    </div>
+    <nav id="sideNav">
+      <a href="#dashboard" data-view="dashboard">📊 Dashboard</a>
+      <a href="#prepinac" data-view="prepinac">🔀 Přepínač webu &amp; sekce</a>
+      <a href="#texty" data-view="texty">✏️ Editor textů</a>
+      <a href="#katalog" data-view="katalog">🎪 Katalog atrakcí &amp; maskotů</a>
+      <a href="#galeriemest" data-view="galeriemest">🖼️ Galerie podle měst</a>
+      <a href="#videa" data-view="videa">🎬 Videa</a>
+      <a href="#cenik" data-view="cenik">💰 Ceník</a>
+      <a href="#faq" data-view="faq">❓ FAQ</a>
+      <a href="#kontakty" data-view="kontakty">✉️ Kontakty, poptávky &amp; IČO</a>
+      <a href="#socialni" data-view="socialni">🔗 Sociální sítě</a>
+      <a href="#seo" data-view="seo">🔍 SEO</a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:10px">
+        <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+        <span style="color:var(--muted);font-size:.85rem">Administrace webu Maskoti</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="index.html" target="_blank" style="font-size:.85rem;font-weight:600;color:var(--coral)">Náhled webu ↗</a>
+        <button class="icon-btn" id="darkToggle">🌙</button>
+        <button class="btn-dark" id="logoutBtn">Odhlásit</button>
+      </div>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="seed-data.js"></script>
+<script type="module" src="db.js"></script>
+<script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Veřejně čitelné, editovatelné jen adminem
+    match /settings/{id}       { allow read: if true; allow write: if isAdmin(); }
+    match /company/{id}        { allow read: if true; allow write: if isAdmin(); }
+    match /seo/{id}             { allow read: if true; allow write: if isAdmin(); }
+    match /sections/{id}       { allow read: if true; allow write: if isAdmin(); }
+    match /content/{id}        { allow read: if true; allow write: if isAdmin(); }
+    match /items/{id}           { allow read: if true; allow write: if isAdmin(); }
+    match /galleryCities/{id}  { allow read: if true; allow write: if isAdmin(); }
+    match /galleryPhotos/{id}  { allow read: if true; allow write: if isAdmin(); }
+    match /videos/{id}          { allow read: if true; allow write: if isAdmin(); }
+    match /pricing/{id}         { allow read: if true; allow write: if isAdmin(); }
+    match /faq/{id}              { allow read: if true; allow write: if isAdmin(); }
+    match /testimonials/{id}   { allow read: if true; allow write: if isAdmin(); }
+    match /social/{id}          { allow read: if true; allow write: if isAdmin(); }
+
+    // Poptávky: kdokoliv smí odeslat, ale vidí/spravuje jen admin
+    match /leads/{id} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Seznam adminů — spravuje se ručně přes Firebase Console, ne z webu
+    match /admins/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+  }
+}
