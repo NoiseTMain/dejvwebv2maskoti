@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Maskoti | Atrakce365 — zábava pro dětské oslavy i firemní akce</title>
+<meta id="metaDescription" name="description" content="Kostýmovaní maskoti, animátoři a párty program pro dětské oslavy, firemní akce a městské slavnosti po celé ČR.">
+<meta property="og:title" id="ogTitle" content="Maskoti | Atrakce365">
+<meta property="og:description" id="ogDescription" content="Zábavný program a maskoti pro vaši akci.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="logo">
+      <span class="logo-badge">🎭</span>
+      Maskoti <small>· Atrakce365</small>
+    </a>
+    <nav class="nav" id="navFull">
+      <a href="#top">Úvod</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#maskoti">Maskoti</a>
+      <a href="#portfolio">O nás</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn-cta">Nezávazná poptávka</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav"></div>
+</header>
+
+<section class="hero" id="top" data-section="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" id="heroEyebrow">Maskoti pro nezapomenutelné oslavy</span>
+      <h1 id="heroTitle">Kouzlo v kostýmu, úsměv na tváři</h1>
+      <p class="lead" id="heroSubtitle"></p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn-cta" id="heroCta">Vybrat maskota</a>
+        <a href="#jak-to-probiha" class="btn-outline">Jak to probíhá</a>
+      </div>
+    </div>
+    <div class="hero-badge">🎭</div>
+  </div>
+</section>
+
+<section class="pad on-cream" id="sluzby" data-section="sluzby">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Co všechno zajistíme</span>
+      <h2>Zábava šitá na míru vaší akci</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card reveal"><div class="icon-badge">🎉</div><h3>Dětské oslavy</h3><p>Maskot přijede přímo k vám a rozzáří narozeninovou párty.</p></div>
+      <div class="card reveal"><div class="icon-badge">🏢</div><h3>Firemní akce</h3><p>Teambuildingy, dny dětí pro zaměstnance, family day.</p></div>
+      <div class="card reveal"><div class="icon-badge">🏛️</div><h3>Městské slavnosti</h3><p>Pouťové a jarmareční programy pro obce a města.</p></div>
+      <div class="card reveal"><div class="icon-badge">🎵</div><h3>Párty program</h3><p>Animátor, hry, soutěže, tombola a hudební doprovod.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="maskoti" data-section="maskoti">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Naši oblíbenci</span>
+      <h2>Vyberte si maskota na míru</h2>
+    </div>
+    <div class="grid-3" id="mascotsGrid"></div>
+  </div>
+</section>
+
+<section class="pad on-cream" id="galerie" data-section="galerie">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Z našich akcí</span>
+      <h2>Galerie</h2>
+    </div>
+    <div class="gallery-filters" id="galleryFilters"></div>
+    <div class="masonry" id="galleryGrid"></div>
+  </div>
+</section>
+
+<section class="pad" id="jak-to-probiha" data-section="jak-to-probiha">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Bez starostí</span>
+      <h2>Jak vystoupení probíhá</h2>
+    </div>
+    <div class="steps">
+      <div class="reveal"><div class="step-icon">💬</div><h3 style="margin:14px 0 6px">Poptávka</h3><p style="color:rgba(255,248,239,.6);margin:0">Napíšete nám termín, místo a představu — do 24 hodin se ozveme.</p></div>
+      <div class="reveal"><div class="step-icon">✅</div><h3 style="margin:14px 0 6px">Potvrzení</h3><p style="color:rgba(255,248,239,.6);margin:0">Domluvíme detaily programu a maskota, rezervujeme termín.</p></div>
+      <div class="reveal"><div class="step-icon">🎉</div><h3 style="margin:14px 0 6px">Vystoupení</h3><p style="color:rgba(255,248,239,.6);margin:0">Animátor dorazí včas, postará se o kompletní zábavu na akci.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad on-cream" id="cenik" data-section="cenik">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Ceník</span>
+      <h2>Transparentní ceny bez skrytých poplatků</h2>
+    </div>
+    <div class="grid-3" id="pricingGrid"></div>
+  </div>
+</section>
+
+<section class="pad" id="portfolio" data-section="portfolio">
+  <div class="container">
+    <div class="section-head reveal text-center mx-auto" style="max-width:640px">
+      <span class="eyebrow">Náš příběh</span>
+      <h2>O nás</h2>
+      <p style="color:rgba(255,248,239,.7)">Atrakce365 přináší zábavu na akce po celé České republice už přes deset let — od rodinné oslavy po městskou slavnost pro tisíce lidí.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal text-center" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <p class="display" style="font-size:2.2rem;color:var(--coral);margin:0">10+</p><p style="color:rgba(255,248,239,.6);margin:6px 0 0">let na trhu</p>
+      </div>
+      <div class="card reveal text-center" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <p class="display" style="font-size:2.2rem;color:var(--coral);margin:0">1500+</p><p style="color:rgba(255,248,239,.6);margin:6px 0 0">odehraných akcí</p>
+      </div>
+      <div class="card reveal text-center" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)">
+        <p class="display" style="font-size:2.2rem;color:var(--coral);margin:0">40+</p><p style="color:rgba(255,248,239,.6);margin:6px 0 0">kostýmů a maskotů</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad on-cream" id="reference" data-section="reference">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Co říkají zákazníci</span>
+      <h2>Ověřené reference</h2>
+    </div>
+    <div class="grid-3" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+<section class="pad" id="faq" data-section="faq">
+  <div class="container" style="max-width:720px">
+    <div class="section-head reveal text-center mx-auto">
+      <span class="eyebrow">Máte otázku?</span>
+      <h2>Časté dotazy</h2>
+    </div>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<section class="pad on-cream" id="kontakt" data-section="kontakt">
+  <div class="container" style="max-width:720px">
+    <div class="section-head reveal text-center mx-auto">
+      <span class="eyebrow">Rezervace</span>
+      <h2>Pošlete nám nezávaznou poptávku</h2>
+      <p style="color:rgba(27,16,53,.6)">Ozveme se do 24 hodin s nabídkou na míru.</p>
+    </div>
+
+    <div id="contactSuccess" class="form-success hidden">
+      <p class="display" style="font-size:1.4rem;margin:0 0 6px">Poptávka odeslána!</p>
+      <p style="margin:0;color:rgba(27,16,53,.6)">Ozveme se vám co nejdříve na uvedený kontakt.</p>
+    </div>
+
+    <form id="contactForm" class="form-grid">
+      <input class="field" name="name" required placeholder="Jméno a příjmení" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <input class="field" name="phone" required placeholder="Telefon" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <input class="field" name="email" required type="email" placeholder="E-mail" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <input class="field" name="eventDate" type="date" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <input class="field" name="eventPlace" placeholder="Místo akce" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <input class="field" name="guestCount" placeholder="Počet návštěvníků" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)">
+      <textarea class="field form-full" name="note" rows="4" placeholder="Poznámka k akci" style="color:var(--ink);background:rgba(27,16,53,.04);border-color:rgba(27,16,53,.15)"></textarea>
+      <button type="submit" class="btn-cta form-full">Odeslat poptávku</button>
+    </form>
+    <p style="font-size:.78rem;color:rgba(27,16,53,.45);margin-top:10px">
+      Poznámka: bez připojené e-mailové služby (viz README.md) se poptávka uloží jen lokálně a zobrazí se v administraci ve stejném prohlížeči.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="display" style="font-size:1.1rem;margin:0 0 8px">Maskoti · Atrakce365</p>
+        <p style="font-size:.85rem;color:rgba(255,248,239,.6);max-width:280px">Kostýmovaní maskoti, animátoři a zábavný program pro dětské oslavy, firemní akce a městské slavnosti po celé ČR a SK.</p>
+        <div class="social-row" id="socialRow"></div>
+      </div>
+      <div id="navFooterServices">
+        <h4>Nabízíme</h4>
+        <ul>
+          <li><a href="#maskoti">Maskoti</a></li>
+          <li><a href="#sluzby">Párty program</a></li>
+          <li><a href="#portfolio">O nás</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li id="footerPhone"></li>
+          <li id="footerEmail"></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2010–<span id="year"></span> Atrakce365. Všechna práva vyhrazena.</p>
+  </div>
+</footer>
+
+<div class="floating">
+  <a class="fab fab-whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noreferrer">💬</a>
+  <a class="fab fab-call" id="callBtn" href="#">📞</a>
+</div>
+
+<div class="cookie-bar" id="cookieBar">
+  <p>Používáme cookies pro analytiku a lepší zážitek z webu.</p>
+  <button class="btn-small" id="cookieAccept">Rozumím</button>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
