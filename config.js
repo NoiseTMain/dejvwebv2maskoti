@@ -6,10 +6,10 @@
  * Bez správně vyplněných hodnot web ani administrace nebudou fungovat.
  */
 window.FIREBASE_CONFIG = {
-  apiKey: 'TVUJ-API-KEY',
-  authDomain: 'tvuj-projekt.firebaseapp.com',
-  projectId: 'tvuj-projekt',
-  storageBucket: 'tvuj-projekt.appspot.com',
-  messagingSenderId: '000000000000',
-  appId: '1:000000000000:web:xxxxxxxxxxxxxxxxxxxxxx'
+  apiKey: 'AIzaSyDFeOPCBHWEfSYI5vm_nMaqluu6WyD2Weo',
+  authDomain: 'atrakce365-889dd.firebaseapp.com',
+  projectId: 'atrakce365-889dd',
+  storageBucket: 'atrakce365-889dd.firebasestorage.app',
+  messagingSenderId: '1074899958785',
+  appId: '1:1074899958785:web:3c7075c1b21ead8374d400'
 };
